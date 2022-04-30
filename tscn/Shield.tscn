@@ -1,0 +1,423 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://NES - Space Invaders JPN - General Sprites.png" type="Texture" id=1]
+
+[node name="Shield" type="Node2D"]
+
+[node name="TopLeft" type="Area2D" parent="."]
+position = Vector2( -8, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopLeft"]
+polygon = PoolVector2Array( 4, 4, 4, -4, 0, 0, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="TopLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 182, 126, 8, 8 )
+
+[node name="TopMiddle" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopMiddle"]
+polygon = PoolVector2Array( -4, 4, 4, 4, 4, -4, -4, -4 )
+
+[node name="Sprite" type="Sprite" parent="TopMiddle"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="TopRight" type="Area2D" parent="."]
+position = Vector2( 8, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopRight"]
+polygon = PoolVector2Array( 4, 4, 0, 0, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="TopRight"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 182, 153, 8, 8 )
+
+[node name="MiddleLeft" type="Area2D" parent="."]
+position = Vector2( -8, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MiddleLeft"]
+polygon = PoolVector2Array( 4, 4, -4, 4, -4, -4, 4, -4 )
+
+[node name="Sprite" type="Sprite" parent="MiddleLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="Center" type="Area2D" parent="."]
+position = Vector2( 0, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Center"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="Center"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="MiddleRight" type="Area2D" parent="."]
+position = Vector2( 8, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MiddleRight"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="MiddleRight"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="BottomLeft" type="Area2D" parent="."]
+position = Vector2( -8, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomLeft"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="BottomLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 142, 8, 8 )
+
+[node name="BottomMiddle" type="Area2D" parent="."]
+position = Vector2( 0, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomMiddle"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="BottomMiddle"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 120, 142, 8, 8 )
+
+[node name="BottomRight" type="Area2D" parent="."]
+position = Vector2( 8, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomRight"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+
+[node name="Sprite" type="Sprite" parent="BottomRight"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 142, 8, 8 )
+
+[node name="TopLeft2" type="Area2D" parent="."]
+visible = false
+position = Vector2( -8, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopLeft2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, 2, 2, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="TopLeft2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 191, 126, 8, 8 )
+
+[node name="TopMiddle2" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopMiddle2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="TopMiddle2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="TopRight2" type="Area2D" parent="."]
+visible = false
+position = Vector2( 8, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopRight2"]
+polygon = PoolVector2Array( 4, 4, -2, 2, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="TopRight2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 191, 153, 8, 8 )
+
+[node name="MiddleLeft2" type="Area2D" parent="."]
+visible = false
+position = Vector2( -8, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MiddleLeft2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="MiddleLeft2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="Center2" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Center2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="Center2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="MiddleRight2" type="Area2D" parent="."]
+visible = false
+position = Vector2( 8, 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MiddleRight2"]
+polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="MiddleRight2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="BottomLeft2" type="Area2D" parent="."]
+visible = false
+position = Vector2( -8, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomLeft2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="BottomLeft2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="BottomRight2" type="Area2D" parent="."]
+visible = false
+position = Vector2( 8, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomRight2"]
+polygon = PoolVector2Array( 4, 4, 4, -4, -4, -4, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="BottomRight2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="TopLeft3" type="Area2D" parent="."]
+visible = false
+position = Vector2( -8, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopLeft3"]
+polygon = PoolVector2Array( 4, 4, 4, -4, 3, 3, -4, 4 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="TopLeft3"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 200, 126, 8, 8 )
+
+[node name="TopMiddle3" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopMiddle3"]
+polygon = PoolVector2Array( -4, 4, -2, 4, -2, -4, -4, -4 )
+
+[node name="Sprite" type="Sprite" parent="TopMiddle3"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 134, 45, 8, 8 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="TopMiddle3"]
+
+[node name="TopMiddle4" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopMiddle4"]
+
+[node name="Sprite" type="Sprite" parent="TopMiddle4"]
+
+[node name="TopMiddle5" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopMiddle5"]
+
+[node name="Sprite" type="Sprite" parent="TopMiddle5"]
+
+[node name="Area2D22" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D22"]
+
+[node name="Sprite" type="Sprite" parent="Area2D22"]
+
+[node name="Area2D23" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D23"]
+
+[node name="Sprite" type="Sprite" parent="Area2D23"]
+
+[node name="Area2D24" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D24"]
+
+[node name="Sprite" type="Sprite" parent="Area2D24"]
+
+[node name="Area2D25" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D25"]
+
+[node name="Sprite" type="Sprite" parent="Area2D25"]
+
+[node name="Area2D26" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D26"]
+
+[node name="Sprite" type="Sprite" parent="Area2D26"]
+
+[node name="Area2D27" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D27"]
+
+[node name="Sprite" type="Sprite" parent="Area2D27"]
+
+[node name="Area2D28" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D28"]
+
+[node name="Sprite" type="Sprite" parent="Area2D28"]
+
+[node name="Area2D29" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D29"]
+
+[node name="Sprite" type="Sprite" parent="Area2D29"]
+
+[node name="Area2D30" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D30"]
+
+[node name="Sprite" type="Sprite" parent="Area2D30"]
+
+[node name="Area2D31" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D31"]
+
+[node name="Sprite" type="Sprite" parent="Area2D31"]
+
+[node name="Area2D32" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D32"]
+
+[node name="Sprite" type="Sprite" parent="Area2D32"]
+
+[node name="Area2D33" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D33"]
+
+[node name="Sprite" type="Sprite" parent="Area2D33"]
+
+[node name="Area2D34" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D34"]
+
+[node name="Sprite" type="Sprite" parent="Area2D34"]
+
+[node name="Area2D35" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D35"]
+
+[node name="Sprite" type="Sprite" parent="Area2D35"]
+
+[node name="Area2D36" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D36"]
+
+[node name="Sprite" type="Sprite" parent="Area2D36"]
+
+[node name="Area2D37" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D37"]
+
+[node name="Sprite" type="Sprite" parent="Area2D37"]
+
+[node name="Area2D38" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D38"]
+
+[node name="Sprite" type="Sprite" parent="Area2D38"]
+
+[node name="Area2D39" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D39"]
+
+[node name="Sprite" type="Sprite" parent="Area2D39"]
+
+[node name="Area2D40" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D40"]
+
+[node name="Sprite" type="Sprite" parent="Area2D40"]
+
+[node name="Area2D41" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D41"]
+
+[node name="Sprite" type="Sprite" parent="Area2D41"]
+
+[node name="Area2D42" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D42"]
+
+[node name="Sprite" type="Sprite" parent="Area2D42"]
+
+[node name="Area2D43" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D43"]
+
+[node name="Sprite" type="Sprite" parent="Area2D43"]
+
+[node name="Area2D44" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D44"]
+
+[node name="Sprite" type="Sprite" parent="Area2D44"]
+
+[node name="Area2D45" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D45"]
+
+[node name="Sprite" type="Sprite" parent="Area2D45"]
+
+[node name="Area2D46" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D46"]
+
+[node name="Sprite" type="Sprite" parent="Area2D46"]
+
+[node name="Area2D47" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D47"]
+
+[node name="Sprite" type="Sprite" parent="Area2D47"]
+
+[node name="Area2D48" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D48"]
+
+[node name="Sprite" type="Sprite" parent="Area2D48"]
+
+[node name="Area2D49" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D49"]
+
+[node name="Sprite" type="Sprite" parent="Area2D49"]
+
+[node name="Area2D50" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D50"]
+
+[node name="Sprite" type="Sprite" parent="Area2D50"]
+
+[node name="Area2D51" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D51"]
+
+[node name="Sprite" type="Sprite" parent="Area2D51"]

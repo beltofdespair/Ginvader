@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://NES - Space Invaders JPN - General Sprites.png" type="Texture" id=1]
+
+[node name="Block" type="Node2D"]
+
+[node name="TopLeft" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="TopLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopLeft"]
+
+[node name="TopMiddle" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="TopMiddle"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 125, 45, 8, 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopMiddle"]
+
+[node name="TopRight" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="TopRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopRight"]
+
+[node name="MiddleLeft" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="MiddleLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MiddleLeft"]
+
+[node name="Center" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Center"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center"]
+
+[node name="MiddleRight" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="MiddleRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MiddleRight"]
+
+[node name="BottomLeft" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="BottomLeft"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomLeft"]
+
+[node name="BottomMiddle" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="BottomMiddle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomMiddle"]
+
+[node name="BottomRight" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="BottomRight"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomRight"]

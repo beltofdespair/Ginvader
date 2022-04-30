@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Barrier" type="Area2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 1, 1.1 )
+polygon = PoolVector2Array( -32, 22, -32, -15, -16, -24, 15, -24, 32, -14, 32, 22, 15, 22, 13, 17, 9, 14, 4, 12, -4, 12, -9, 14, -13, 17, -15, 22 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( 8, -3 )
+scale = Vector2( 1, 1.1 )
+color = Color( 0.521569, 0.819608, 0.25098, 1 )
+polygon = PoolVector2Array( -40, 25, -40, -12, -24, -21, 7, -21, 24, -11, 24, 25, 7, 25, 5, 20, 1, 17, -4, 15, -12, 15, -17, 17, -21, 20, -23, 25 )

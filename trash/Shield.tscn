@@ -1,0 +1,189 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://NES - Space Invaders JPN - General Sprites.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 4, 4 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 4, 4 )
+
+[node name="Shield" type="Node2D"]
+
+[node name="TopLeft" type="Area2D" parent="."]
+visible = false
+position = Vector2( -8, -8 )
+
+[node name="Sprite2" type="Sprite" parent="TopLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 182, 126, 8, 8 )
+
+[node name="TopLeft" type="CollisionPolygon2D" parent="TopLeft"]
+position = Vector2( -0.555681, 0.0278406 )
+polygon = PoolVector2Array( -3.41815, 3.9757, 4.51642, 3.9757, 4.5721, -4.04239 )
+
+[node name="TopLeft2" type="Area2D" parent="."]
+visible = false
+position = Vector2( -7.5, -7.5 )
+
+[node name="Sprite2" type="Sprite" parent="TopLeft2"]
+position = Vector2( -0.00925922, 0.491871 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 128, 7, 6 )
+
+[node name="TopLeft" type="CollisionPolygon2D" parent="TopLeft2"]
+position = Vector2( -0.5, 0 )
+polygon = PoolVector2Array( -3, 3.5, 4, 3.5, 4, -3.5, 1.63696, 0.97326 )
+
+[node name="TopLeft3" type="Area2D" parent="."]
+position = Vector2( -7.5, -7.5 )
+
+[node name="Sprite2" type="Sprite" parent="TopLeft3"]
+position = Vector2( 0, 1.5 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 201, 130, 7, 4 )
+
+[node name="TopLeft" type="CollisionPolygon2D" parent="TopLeft3"]
+position = Vector2( -0.5, 0 )
+polygon = PoolVector2Array( -3, 3.5, 4, 3.5, 4, -3.5, 2.28184, 1.76696 )
+
+[node name="TopMiddle" type="Area2D" parent="."]
+position = Vector2( 0, -8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite3" type="Sprite" parent="TopMiddle"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="TopMiddle" type="CollisionShape2D" parent="TopMiddle"]
+shape = SubResource( 1 )
+
+[node name="TopMiddle2" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, -8 )
+
+[node name="Sprite3" type="Sprite" parent="TopMiddle2"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="TopMiddle" type="CollisionShape2D" parent="TopMiddle2"]
+position = Vector2( 0, 2.06547 )
+shape = SubResource( 1 )
+
+[node name="TopRight" type="Area2D" parent="."]
+position = Vector2( 8, -8 )
+
+[node name="Sprite4" type="Sprite" parent="TopRight"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 182, 153, 8, 8 )
+
+[node name="TopRight" type="CollisionPolygon2D" parent="TopRight"]
+position = Vector2( 0.5, 0 )
+polygon = PoolVector2Array( -4.49334, 3.9757, -4.49334, -3.98671, 3.46907, 3.94786 )
+
+[node name="MiddleLeft" type="Area2D" parent="."]
+position = Vector2( -8, 0 )
+
+[node name="Sprite5" type="Sprite" parent="MiddleLeft"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="MiddleLeft" type="CollisionShape2D" parent="MiddleLeft"]
+shape = SubResource( 2 )
+
+[node name="Center" type="Area2D" parent="."]
+
+[node name="Sprite6" type="Sprite" parent="Center"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="Center" type="CollisionShape2D" parent="Center"]
+shape = SubResource( 3 )
+
+[node name="MiddleRight" type="Area2D" parent="."]
+
+[node name="Sprite7" type="Sprite" parent="MiddleRight"]
+position = Vector2( 8, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="MiddleRight" type="CollisionShape2D" parent="MiddleRight"]
+position = Vector2( 8, 0 )
+shape = SubResource( 4 )
+
+[node name="Area2D8" type="Area2D" parent="."]
+position = Vector2( -8, 8 )
+
+[node name="Sprite8" type="Sprite" parent="Area2D8"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="BottomLeft" type="CollisionShape2D" parent="Area2D8"]
+shape = SubResource( 5 )
+
+[node name="Area2D9" type="Area2D" parent="."]
+position = Vector2( 0, 8 )
+
+[node name="Sprite9" type="Sprite" parent="Area2D9"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="BottomMiddle" type="CollisionShape2D" parent="Area2D9"]
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 126, 24, 24 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Area2D10" type="Area2D" parent="."]
+position = Vector2( 8, 8 )
+
+[node name="Sprite10" type="Sprite" parent="Area2D10"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 137, 126, 8, 8 )
+
+[node name="BottomRight" type="CollisionShape2D" parent="Area2D10"]
+shape = SubResource( 7 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="Area2D4" type="Area2D" parent="."]
+
+[node name="Area2D5" type="Area2D" parent="."]
+
+[node name="Area2D6" type="Area2D" parent="."]

@@ -1,0 +1,262 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://tscn/3Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tscn/2Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tscn/4Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://tscn/Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://gd/Enemies.gd" type="Script" id=5]
+
+[node name="Enemies" type="Node"]
+script = ExtResource( 5 )
+
+[node name="Enemy1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 33, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 47, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 61, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 75, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 89, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 103, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 117, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 131, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 145, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 159, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 173, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 187, 132 )
+scale = Vector2( 1.7, 1.2 )
+
+[node name="Enemy13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 33, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 61, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 75, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 89, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 103, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 117, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 131, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy21" parent="." instance=ExtResource( 2 )]
+position = Vector2( 145, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy22" parent="." instance=ExtResource( 2 )]
+position = Vector2( 159, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy23" parent="." instance=ExtResource( 2 )]
+position = Vector2( 173, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy24" parent="." instance=ExtResource( 2 )]
+position = Vector2( 187, 116 )
+scale = Vector2( 1.7, 1.2 )
+script = null
+
+[node name="Enemy25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 33, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 47, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 61, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy29" parent="." instance=ExtResource( 1 )]
+position = Vector2( 89, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 103, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 117, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 131, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 145, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 159, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 173, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 187, 100 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 33, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy38" parent="." instance=ExtResource( 1 )]
+position = Vector2( 47, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy39" parent="." instance=ExtResource( 1 )]
+position = Vector2( 61, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy40" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 89, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 103, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 117, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy44" parent="." instance=ExtResource( 1 )]
+position = Vector2( 131, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy45" parent="." instance=ExtResource( 1 )]
+position = Vector2( 145, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy46" parent="." instance=ExtResource( 1 )]
+position = Vector2( 159, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy47" parent="." instance=ExtResource( 1 )]
+position = Vector2( 173, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy48" parent="." instance=ExtResource( 1 )]
+position = Vector2( 187, 83 )
+scale = Vector2( 1.4, 1 )
+
+[node name="Enemy49" parent="." instance=ExtResource( 3 )]
+position = Vector2( 33, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy50" parent="." instance=ExtResource( 3 )]
+position = Vector2( 47, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy51" parent="." instance=ExtResource( 3 )]
+position = Vector2( 61, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy52" parent="." instance=ExtResource( 3 )]
+position = Vector2( 75, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy53" parent="." instance=ExtResource( 3 )]
+position = Vector2( 89, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy54" parent="." instance=ExtResource( 3 )]
+position = Vector2( 103, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy55" parent="." instance=ExtResource( 3 )]
+position = Vector2( 117, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy56" parent="." instance=ExtResource( 3 )]
+position = Vector2( 131, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy57" parent="." instance=ExtResource( 3 )]
+position = Vector2( 145, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy58" parent="." instance=ExtResource( 3 )]
+position = Vector2( 159, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy59" parent="." instance=ExtResource( 3 )]
+position = Vector2( 173, 67 )
+scale = Vector2( 1.8, 1.3 )
+
+[node name="Enemy60" parent="." instance=ExtResource( 3 )]
+position = Vector2( 187, 67 )
+scale = Vector2( 1.8, 1.3 )

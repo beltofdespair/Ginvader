@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://gd/EnemyShot.gd" type="Script" id=1]
+[ext_resource path="res://NES - Space Invaders JPN - General Sprites.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "move"
+length = 0.183333
+loop = true
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:region_enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.0166667, 0.0333333, 0.05, 0.0666667, 0.0833333, 0.1, 0.116667, 0.133333, 0.15, 0.166667, 0.183333 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Rect2( 121, 18, 3, 7 ), Rect2( 121, 18, 3, 7 ), Rect2( 121, 18, 3, 7 ), Rect2( 130, 18, 3, 7 ), Rect2( 130, 18, 3, 7 ), Rect2( 130, 18, 3, 7 ), Rect2( 139, 18, 3, 7 ), Rect2( 139, 18, 3, 7 ), Rect2( 139, 18, 3, 7 ), Rect2( 112, 18, 3, 7 ), Rect2( 112, 18, 3, 7 ), Rect2( 112, 18, 3, 7 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1.39055, 3.39359 )
+
+[node name="EShot" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 121, 18, 3, 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/move = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.0159369, 0.0256572 )
+shape = SubResource( 2 )
+
+[node name="ShotWaitTimer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_EShot_area_entered"]
+[connection signal="timeout" from="ShotWaitTimer" to="." method="_on_ShotWait_timeout"]

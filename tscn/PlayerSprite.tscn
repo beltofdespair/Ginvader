@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://NES - Space Invaders JPN - General Sprites.png" type="Texture" id=1]
+
+[node name="PlayerSprite" type="Sprite"]
+modulate = Color( 0.172549, 1, 0, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 115, 63, 11, 7 )

@@ -39,6 +39,7 @@ func _process(_delta):
 
 		if Input.is_action_just_pressed("shoot"):
 			if get_parent().get_node_or_null("PShot"):
+#			if get_parent().get_node("PShot"):
 				can_shoot = false
 			else:
 				main.shots += 1
@@ -104,9 +105,11 @@ func _on_Timer_timeout():
 	can_shoot = true
 
 func _on_DeathTimer_timeout():
+	var i = Globals.lives
 	Globals.lives -= 1
 	if Globals.lives == 0:
 		var _k = get_tree().change_scene("res://tscn/Start.tscn")
+	main.get_node(str("PlayerSprite", i)).queue_free()
 	get_node("CollisionPolygon2D").set_deferred("disabled", false)
 	sprite.region_rect = Rect2(115,63,11,8)
 	main.player_set()

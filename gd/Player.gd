@@ -42,7 +42,7 @@ func _process(_delta):
 				can_shoot = false
 			else:
 				main.shots += 1
-				can_shoot = true
+#				can_shoot = true
 				var shotinstance = shot.instance()
 				get_parent().add_child(shotinstance)
 				shotinstance.global_position.y += position.y - 10

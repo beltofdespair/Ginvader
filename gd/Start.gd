@@ -3,6 +3,7 @@ extends Node2D
 onready var scene
 
 func _ready():
+	Globals.lives = 3
 	VisualServer.set_default_clear_color(Color( 0, 0, 0, 1 ))
 
 func _process(_delta):

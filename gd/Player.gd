@@ -35,7 +35,7 @@ func _process(_delta):
 	if moving:
 		position.x += vel
 
-		position.x = clamp(position.x, screensize.x-screensize.x+30, screensize.x-30)
+		position.x = clamp(position.x, screensize.x-screensize.x+32, screensize.x-32)
 
 		if Input.is_action_just_pressed("shoot"):
 			if get_parent().get_node_or_null("PShot"):

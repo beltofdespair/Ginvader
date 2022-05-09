@@ -15,7 +15,7 @@ func _ready():
 func _process(_delta):
 # if the shot should be moving (it hasn't hit anything yet), move it
 	if moving:
-		global_position.y -= 3.5
+		global_position.y -= 4
 	
 func _on_PlayerShot_area_entered(area):
 # if it hits something, hide the sprite

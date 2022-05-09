@@ -5,15 +5,16 @@
 [node name="2Shield" type="Node2D"]
 
 [node name="SmallBlock" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 12 )
 
 [node name="SmallBlock2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4, 0 )
+position = Vector2( 0, 8 )
 
 [node name="SmallBlock3" parent="." instance=ExtResource( 2 )]
 position = Vector2( -4, 4 )
 
 [node name="SmallBlock4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8, 0 )
+position = Vector2( -8, 16 )
 
 [node name="SmallBlock5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4, 8 )
@@ -25,7 +26,7 @@ position = Vector2( -8, 8 )
 position = Vector2( -4, 8 )
 
 [node name="SmallBlock8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8, 4 )
+position = Vector2( -8, 12 )
 
 [node name="SmallBlock9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4, 4 )
@@ -37,46 +38,13 @@ position = Vector2( 0, 4 )
 position = Vector2( 8, 12 )
 
 [node name="SmallBlock12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12, 8 )
+position = Vector2( 4, 12 )
 
 [node name="SmallBlock13" parent="." instance=ExtResource( 2 )]
-position = Vector2( -4, 0 )
+position = Vector2( 8, 8 )
 
 [node name="SmallBlock14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12, 12 )
+position = Vector2( -4, 12 )
 
 [node name="SmallBlock15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 8, 16 )
-
-[node name="SmallBlock16" parent="." instance=ExtResource( 2 )]
-position = Vector2( -8, 12 )
-
-[node name="SmallBlock17" parent="." instance=ExtResource( 2 )]
-position = Vector2( -4, 12 )
-
-[node name="SmallBlock18" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4, 12 )
-
-[node name="SmallBlock19" parent="." instance=ExtResource( 2 )]
-position = Vector2( -8, 16 )
-
-[node name="SmallBlock20" parent="." instance=ExtResource( 2 )]
-position = Vector2( -4, 16 )
-
-[node name="SmallBlock21" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12, 16 )
-
-[node name="SmallBlock22" parent="." instance=ExtResource( 2 )]
-position = Vector2( -8, 4 )
-
-[node name="SmallBlock23" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 8 )
-
-[node name="SmallBlock24" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 12 )
-
-[node name="SmallBlock25" parent="." instance=ExtResource( 2 )]
-position = Vector2( 8, 8 )
-
-[node name="SmallBlock26" parent="." instance=ExtResource( 2 )]
-position = Vector2( 12, 4 )

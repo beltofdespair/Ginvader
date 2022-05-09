@@ -164,10 +164,10 @@ position = Vector2( 134, 189 )
 position = Vector2( 27, 246 )
 
 [node name="PlayerSprite2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 47, 246 )
+position = Vector2( 40, 246 )
 
 [node name="PlayerSprite3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 67, 246 )
+position = Vector2( 53, 246 )
 
 [connection signal="area_entered" from="LeftWall" to="Enemies" method="_on_LeftWall_area_entered"]
 [connection signal="area_entered" from="RightWall" to="Enemies" method="_on_RightWall_area_entered"]
